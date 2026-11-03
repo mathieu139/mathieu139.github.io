@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projets de Mathieu Heuberger : infrastructure, réseau, homelab et amélioration continue.">
+  <title>Projets | Mathieu Heuberger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">MH</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="projets.html" class="active">Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section hero reveal">
+      <p class="eyebrow">Projets techniques</p>
+      <h1>Des réalisations concrètes autour des réseaux et des systèmes.</h1>
+      <p class="lead">
+        Chaque projet renforce un axe précis: architecture, configuration, sécurité, documentation et amélioration continue.
+        J'évalue ce qui fonctionne, ce qui doit être renforcé et ce qu'il faut simplifier.
+      </p>
+    </section>
+
+    <section class="section project-grid reveal">
+      <article class="project-card">
+        <img class="project-image" src="ktc-opengraph-ktc-blog-personal-storage-home-nas-for-everyone.jpg" alt="Photo du projet NAS Raspberry Pi" data-project-open>
+        <h2>NAS personnel avec Raspberry Pi</h2>
+        <p>
+          Mise en place d'un stockage réseau personnel orienté sauvegarde et accès distant, avec une logique de continuité de service.
+        </p>
+        <ul>
+          <li>Installation de services de partage et synchronisation de fichiers</li>
+          <li>Gestion des droits d'accès et séparation des comptes utilisateurs</li>
+          <li>Réflexion sur la sauvegarde régulière et la supervision basique</li>
+          <li>Documentation pour reproduire et maintenir l'environnement</li>
+        </ul>
+        <button class="project-action" type="button" data-project-open>Agrandir le projet</button>
+      </article>
+
+      <article class="project-card">
+        <img class="project-image" src="16321311161_2C1-2.png" alt="Photo du projet réseau local" data-project-open>
+        <h2>Conception d'un réseau local d'étude</h2>
+        <p>
+          Projet de première année de BTS : conception d'un réseau logique, adressage, segmentation et préparation à l'exploitation.
+        </p>
+        <ul>
+          <li>Plan d'adressage et structuration des sous-réseaux</li>
+          <li>Configuration des équipements et vérification de connectivité</li>
+          <li>Tests de robustesse et résolution d'incidents</li>
+          <li>Rédaction d'un dossier technique clair pour la prise en main</li>
+        </ul>
+        <button class="project-action" type="button" data-project-open>Agrandir le projet</button>
+      </article>
+
+
+      <article class="project-card">
+        <img class="project-image" src="home_repair_service_20dp_CAD2C5_FILL0_wght400_GRAD0_opsz20.svg" alt="Illustration prochains chantiers techniques" data-project-open>
+        <h2>Prochains chantiers techniques</h2>
+        <p>
+          Je prépare plusieurs évolutions pour renforcer mon portfolio technique avec des cas d'usage réalistes.
+        </p>
+        <ul>
+          <li>Mise en place d'une supervision centralisée légère</li>
+          <li>Déploiement d'environnements virtualisés reproductibles</li>
+          <li>Automatisation de tâches d'administration récurrentes</li>
+          <li>Amélioration de la traçabilité via des procédures standardisées</li>
+        </ul>
+        <button class="project-action" type="button" data-project-open>Agrandir le projet</button>
+      </article>
+    </section>
+  </main>
+
+  <div class="project-modal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-modal-close></div>
+    <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-label="Detail du projet">
+      <button class="project-modal__close" type="button" data-modal-close>Fermer</button>
+      <div class="project-modal__content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Portfolio de Mathieu Heuberger</p>
+      <a href="contact.html">Me contacter</a>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

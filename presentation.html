@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Présentation de Mathieu Heuberger : parcours scolaire, vision, compétences et méthodes de travail.">
+  <title>Présentation | Mathieu Heuberger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">MH</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html" class="active">Présentation</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section hero reveal">
+      <p class="eyebrow">Mon profil</p>
+      <h1>Un parcours orienté réseau, système et fiabilité opérationnelle.</h1>
+      <p class="lead">
+        Je m'appelle Mathieu Heuberger. Après un bac professionnel Systèmes Numériques option RISC, j'ai choisi le BTS SIO
+        option SISR pour approfondir la conception d'infrastructures, l'administration réseau et la sécurisation des environnements.
+      </p>
+    </section>
+
+    <section class="section profile-layout reveal">
+      <article class="text-panel">
+        <h2>Qui je suis en quelques lignes</h2>
+        <p>
+          Je suis quelqu'un de rigoureux, orienté résultat et attaché à la qualité de service. J'aime comprendre un problème jusqu'à
+          sa racine, puis proposer une solution claire, documentée et facilement maintenable par une équipe.
+        </p>
+        <p>
+          Dans mes projets comme en stage, j'accorde de l'importance à la méthode: analyser, tester, sécuriser, livrer.
+          Cette approche me permet de progresser vite et de rester fiable même sur des sujets techniques nouveaux.
+        </p>
+
+        <div class="pill-list">
+          <span class="pill">Administration Windows/Linux</span>
+          <span class="pill">Réseaux locaux</span>
+          <span class="pill">Virtualisation</span>
+          <span class="pill">Sécurisation des accès</span>
+          <span class="pill">Documentation technique</span>
+        </div>
+      </article>
+
+      <aside class="text-panel">
+        <h2>Objectif professionnel</h2>
+        <p>
+          Intégrer une équipe IT où je peux participer activement à l'exploitation et à l'amélioration d'une infrastructure réelle,
+          puis évoluer vers un poste d'administrateur systèmes et réseaux.
+        </p>
+        <p>
+          Je cherche un environnement exigeant qui valorise la collaboration, la montée en compétences et les bonnes pratiques.
+        </p>
+      </aside>
+    </section>
+
+    <section class="section reveal">
+      <h2>Mon parcours académique</h2>
+      <div class="timeline">
+        <article class="timeline-item" data-education-open data-education-id="bts" role="button" tabindex="0" aria-label="Voir les détails du BTS SIO">
+          <h3>BTS SIO - option SISR</h3>
+          <span class="meta">Lycée Louis Pergaud, Besançon</span>
+          <p>
+            Je développe des compétences plus avancées en infrastructure: segmentation, services réseau, supervision,
+            procédures d'exploitation, et bonnes pratiques de sécurité.
+          </p>
+        </article>
+
+        <article class="timeline-item" data-education-open data-education-id="lycee" role="button" tabindex="0" aria-label="Voir les détails du bac professionnel">
+          <h3>Bac Pro Systèmes Numériques - option RISC</h3>
+          <span class="meta">Lycée Pasteur Mont-Roland, Dole</span>
+          <p>
+            Construction de bases solides en maintenance, architecture réseau et intervention sur postes et équipements.
+            Cette étape m'a appris l'importance de la précision et de la réactivité sur le terrain.
+          </p>
+        </article>
+
+        <article class="timeline-item" data-education-open data-education-id="college" role="button" tabindex="0" aria-label="Voir les détails du collège">
+          <h3>Collège Gustave Eiffel, Fraisans</h3>
+          <span class="meta">Premières bases et découverte de l'informatique</span>
+          <p>
+            Mes premiers centres d'intérêt techniques sont nés à cette période: dépannage, logique système et curiosité pour les réseaux.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="education-modal" aria-hidden="true">
+    <div class="education-modal__backdrop" data-education-close></div>
+    <div class="education-modal__dialog" role="dialog" aria-modal="true" aria-label="Détail du parcours scolaire">
+      <button class="education-modal__close" type="button" data-education-close>Fermer</button>
+      <div class="education-modal__content"></div>
+    </div>
+  </div>
+
+  <template id="education-college">
+    <div class="education-modal__card">
+      <p class="eyebrow">Parcours scolaire</p>
+      <h2>Collège Gustave Eiffel, Fraisans</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="meta">Stage lié</span>
+          <ul>
+            <li>Télématique Pontarlier - découverte des interventions de maintenance</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </template>
+
+  <template id="education-lycee">
+    <div class="education-modal__card">
+      <p class="eyebrow">Parcours scolaire</p>
+      <h2>Bac Pro Systèmes Numériques - option RISC</h2>
+      <p class="education-modal__sub">Lycée Pasteur Mont-Roland, Dole</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="meta">Stages liés</span>
+          <ul>
+            <li>Hospices Civils de Lyon</li>
+            <li>SIDEC du Jura - Lons-le-Saunier</li>
+            <li>Communauté de communes Médoc Estuaire</li>
+            <li>Supratec - Dole</li>
+            <li>Darty - Dole</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <span class="meta">Projet lié</span>
+          <ul>
+            <li>NAS personnel avec Raspberry Pi</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </template>
+
+  <template id="education-bts">
+    <div class="education-modal__card">
+      <p class="eyebrow">Parcours scolaire</p>
+      <h2>BTS SIO - option SISR</h2>
+      <p class="education-modal__sub">Lycée Louis Pergaud, Besançon</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="meta">Stage lié</span>
+          <ul>
+            <li>Établissement Français du Sang - service informatique</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <span class="meta">Projet lié</span>
+          <ul>
+            <li>Conception d'un réseau local d'étude</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <span class="meta">MOOC et certifications</span>
+          <ul>
+            <li><a href="Attestation CNIL.zip" download>Attestation CNIL</a></li>
+            <li><a href="Certificat - Heuberger Mathieu - 07_01_2026.pdf" download>Certification MOOC EBIOS</a></li>
+            <li><a href="Yaquoi-MOOC-Cybersecurite-Certificat-de-completion-du-MOOC-Cybersecurite-Cyberinic77deedaa3fdb23fa0e44439b52a08cc.pdf" download>MOOC Cyberini</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </template>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Portfolio de Mathieu Heuberger</p>
+      <a href="contact.html">Me contacter</a>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
